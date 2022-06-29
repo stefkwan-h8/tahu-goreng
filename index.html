@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restoran Tahu Goreng</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav id="myTopnav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#area-menu">Menu</a></li>
+                <li><a href="#area-team">Team</a></li>
+                <li><a href="#area-order">Order</a></li>
+                <li><a href="#area-testi">Testimonials</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="navigate()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="home">                
+            <h1>Restoran Tahu Goreng</h1>
+            <p>Selamat datang di halaman web restoran tahu goreng jalan sambas, jakarta.
+                Silahkan lihat menu di bawah dan order via Form</p>
+        </section>
+
+        <section id="area-menu">                
+            <h1 onclick="ubahBg('')">Menu</h1>
+            <ol>
+                <li class="item-menu" onclick="ubahBg('tahu.jpg')">
+                    <img class="menu" src="images/tahu.jpg" alt="aku tahu tapi diam saja">
+                    <p>Tahu Goreng</p> 
+                </li>
+                <li class="item-menu" onclick="ubahBg('bitterballen.jpg')">
+                    <img class="menu" src="images/bitterballen.jpg" alt="bitter ballen pahit tapi bulat">
+                    <p>Bitterballen</p> 
+                </li>
+                <li class="item-menu" onclick="ubahBg('pancake.png')">
+                    <img class="menu" src="images/pancake.png" alt="pancake pan + cake">
+                    <p>pancake</p> 
+                </li>
+            </ol>
+        </section>
+
+        <section id="area-order">
+            <h1>Order</h1>
+            <form action="terima.html">
+                <label>Tahu Goreng</label>
+                <div class="quantity">
+                    <input type="number" min="0" max="9" step="1" value="1">
+                </div>
+                
+
+                <label>Bitterballen</label>
+                <div class="quantity">
+                    <input type="number" min="0" max="9" step="1" value="1">
+                </div>
+
+                <label>pancake</label>
+                <div class="quantity">
+                    <input type="number" min="0" max="9" step="1" value="1">
+                </div>
+
+                <div>
+                    <input type="submit" value="order" class="button-24">
+                </div>
+            </form>
+        </section>
+
+        <section id="area-team">
+            <h1>Team</h1>
+            <div>
+                <div class="position" id="team-1"><span>front-end</span></div>
+                <p>Andhika Widjaja</p>
+            </div>
+
+            <div>
+                <div class="position" id="team-2"><span>back-end</span></div>
+                <p>Budi Budiman</p>
+            </div>
+
+            <div>
+                <div class="position" id="team-3"><span>chef</span></div>
+                <p>Kevin Sanjaya</p>
+            </div>
+        </section>
+
+        <section id="area-testi">
+            <h1>Reviews</h1>
+            <div class="card">
+                <img src="images/1.jpg" alt="">
+                <div>
+                    <h1>Judul Review</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/2.jpg" alt="">
+                <div>
+                    <h1>Judul Review</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/3.jpg" alt="">
+                <div>
+                    <h1>Judul Review</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
